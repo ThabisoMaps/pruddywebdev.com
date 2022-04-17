@@ -1,0 +1,326 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-image: linear-gradient(rgba(4,9,30,0.5),rgba(3,9,30,0.1)),url(levelup.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.logo img{
+	width: 5%;
+	padding: 0.6em 0.8em;
+}
+.header nav h1{
+	width: 90%;
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: left;
+	font-size: 60px;
+}
+.header .profile img{
+	width: 45%;
+	color: white;
+	position: absolute;
+	top: 23%;
+	left: 80%;
+	border-radius: 45px;
+	box-shadow: 100px;
+	transform: translate(-60%);
+	text-align: right;
+}
+.header nav h3{
+	width: 90%;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: left;
+}
+.header nav h4{
+	width: 70%;
+	position: absolute;
+	top: 65%;
+	left: 60px;
+	color: white;
+}
+.header nav h3 a{
+	text-decoration: none;
+	color: darkred;
+	border: 0.1em solid white;
+	background: darkgrey;
+	display: inline-block;
+	padding: 0.5em 0.5em;
+	font-size: 1em;
+	position: relative;
+	cursor: pointer;
+
+}
+.header nav h3 a:hover{
+	border: 1px solid snow;
+	background: gold;
+	transition: 0.5s;
+}
+@media(max-width:  700px){
+	.header nav h1{
+	font-size: 20px;
+	}
+	.header nav h3{
+		display: block;
+	}
+}
+
+/*-----Insight-----*/
+
+
+.second-page{
+	padding: 1px 0;
+}
+.contact-col{
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.container-row-head{
+	text-align: left;
+	padding: 65px 0 0 100px;
+}
+.container-row-head h1{
+	font-size: 65px;
+	color: black;
+}
+.container-row-head p{
+	color: black;
+	font-style: italic;
+	text-align: left;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.contact-col{
+	background-color: skyblue;
+}
+.contact-left-col{
+	flex-basis: 60%;
+}
+.contact-left-col{
+	text-align: left;
+	color: lightgrey;
+	padding: 60px 60px 0 90px;
+}
+.contact-left-col p{
+	padding-top: 10px;
+	text-decoration: inherit;
+	color: white;
+	font-size: 15px;
+}
+.contact-left-col hr{
+	width: 50%;
+	border-top: 1px solid darkred;
+}
+.hr-row hr{
+	width: 70%;
+	border-top: 2px solid darkred;
+}
+	
+.picture-right-col img{
+	width: 300px;
+	border-radius: 130px 0 90px;
+}
+
+
+
+/*----last part---*/
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+.Hotels-col{
+	flex-basis: 30%;
+	border-radius: 10px 10px 10px 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+	background-color: skyblue;
+
+}
+.Hotels-col img{
+	width: 100%;
+	display: block;
+}
+.Hotels-col{
+	flex-basis: 30%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+
+}
+.Hotels-col img{
+	width: 80%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s
+}
+.layer:hover{
+	background: rgba(20, 0, 0, 0, 0.5);
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	font-size: 20px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.9s;
+	color: black;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+.layer h3 h5{
+	font-size: 20px;
+	color: red;
+	text-decoration: underline;
+}
+.layer h2{
+	color: red;
+	text-decoration: underline;
+}
+
+.layer a{
+	color: grey;
+	text-decoration: none;
+}
+.footer{
+	padding: 50px 0 30px;
+}
+#prices{
+	padding: 100px 0 0 0;
+}
+.price-row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.price-right-col {
+	flex-basis: 50%;
+}
+.price-right-col img{
+	width: 80%;
+	border-radius: 200px 10px 10px 10px;
+}
+.price-left-col{
+	flex-basis: 50%;
+}
+.price-text p{
+	max-width: 350px;
+	font-style: italic;
+	font-size: 26%;
+	text-align: left;
+}
+.price-left-col h3{
+	text-decoration: underline;
+	font-size: 25px;
+	flex-basis: 30%;
+	background: lightblue;
+	border-radius: 10px;
+	margin: 5%;
+	width: 50%;
+	text-align: center;
+	padding: 10px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.price-left-col h3:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.5);
+	margin: 10px 10px;
+}
+.price-left-col p{
+	color: black;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 10px;
+	text-align: left;
+}
+.info p{
+	color: grey;
+	padding-top: 10px;
+}
+.work-col img{
+	width: 40%;
+	border-radius: 10px 10px;
+	justify-items: space-between;
+	padding-left: 59px;
+	padding-bottom: 50px;
+}
+.price-row hr{
+	width: 30%;
+	padding: 20px;
+	padding-bottom: 20px;
+	border-top: 3px solid red;
+}
+.work-col h1{
+	text-align: center;
+	padding-bottom: 30px;
+	text-decoration: underline;
+	color: darkgrey;
+}
+hr{
+	width: 100%;
+	border: 0;
+	border-top: 6px solid darkred;
+}
+}
+.footer-row{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-left-col{
+	flex-basis: 50%;
+	margin-top: 60px;
+}
+.footer-right-col{
+	flex-basis: 35%;
+}
+.footer-links{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.link-title h4{
+	color: #fab3c4;
+	margin-bottom: 20px;
+}
+.link-title small{
+	font-size: 13px;
+	color: #777;
+}
